@@ -20,4 +20,8 @@ Route::post('/register', [AuthController::class, 'register']);
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/forms',[FormController::class,'getForm']);
+Route::get('/forms', [FormController::class, 'getForm']);
+
+Route::post('/form-submit', function (\Illuminate\Http\Request $request) {
+    dd($request->all());
+})->name('form.submit');

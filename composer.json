@@ -57,7 +57,8 @@
         "test": [
             "@php artisan config:clear --ansi",
             "@php artisan test"
-        ]
+        ],
+        "format:blade": "blade-formatter resources/views --write"
     },
     "extra": {
         "laravel": {
